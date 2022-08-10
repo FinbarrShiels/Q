@@ -45,6 +45,9 @@ public class Queue {
      * Method to remove head of queue or throw error if empty
      */
     public void remove() {
+        if(isEmpty()){
+            throw new NoSuchElementException();
+        }
         front = (front + 1) % cap;
         n1--;
     }

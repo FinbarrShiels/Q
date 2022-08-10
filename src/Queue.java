@@ -42,7 +42,7 @@ public class Queue {
         return (size() == 0);
     }
     /**
-     * Method to remove head of queue or throw error if empty
+     * Method to remove head of queue or throw error if emptys
      */
     public void remove() {
         if(isEmpty()){

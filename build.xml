@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<project name="CS3306 Project" default="info">
+    <target name="info">
+        <echo>Welcome</echo>
+    </target>
+</project>
+

@@ -42,7 +42,7 @@ public class Queue {
         return (size() == 0);
     }
     /**
-     * Method to remove head of queue or throw error if empty
+     * Method to remove head of queue or throw error if emptys
      */
     public void remove() {
         if(isEmpty()){
@@ -93,21 +93,5 @@ public class Queue {
             throw new NoSuchElementException();
         }
         return arr[front];
-    }
-
-    public static void main (String[] args)
-    {
-        Queue tits = new Queue(5);
-
-        tits.add(20);
-        tits.add(50);
-        tits.add(17);
-        tits.add(99);
-        tits.add(44);
-        System.out.println((tits.peek()));
-        System.out.println((tits.element()));
-        tits.poll();
-        System.out.println((tits.peek()));
-
     }
 }

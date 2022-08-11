@@ -1,7 +1,16 @@
 <?xml version="1.0"?>
-<project name="CS3306 Project" default="info">
+<project name="CS3306 Project" default="info" basedir=".">
     <target name="info">
-        <echo>Welcome</echo>
+        <echo>Welcome to CS3306 Ant Build ${ant.version}</echo>
+    </target>
+    <target name="init">
+        <!-- Create the build directory structure used by compile -->
+        <mkdir dir="build"/>
+    </target>
+    <target name="compile" depends="init"
+            description="compile the source">
+        <!-- Compile the Java code from ${src} into ${build} -->
+        <javac srcdir="src" destdir="build"/>
     </target>
 </project>
 
